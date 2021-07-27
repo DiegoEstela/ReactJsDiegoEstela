@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import { NabVar } from './components/NabVar'
 
 ReactDOM.render(
-  <div>Curso CoderHouse Diego Estela</div>
-  <div>Probando Git</div>,
+  <NabVar />,
   document.getElementById('root')
 );
