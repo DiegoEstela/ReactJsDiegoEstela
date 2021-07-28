@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NabVar } from './components/NabVar'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { App } from './App.js'
+
 
 ReactDOM.render(
-  <NabVar />,
+  <App />,
   document.getElementById('root')
 );
