@@ -1,13 +1,15 @@
 import React from "react";
 import "./NabVar.css";
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap"
+import {CartWidget} from "./CartWidget.js";
 
 export const NabVar = () => {
   return (
     <div className='NavBar'>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">NBPestudio</Navbar.Brand>
+          <Navbar.Brand href="#home"><CartWidget/></Navbar.Brand>
+          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
