@@ -1,22 +1,25 @@
 import React from "react";
 import "./NabVar.css";
-import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap"
-import {CartWidget} from "./CartWidget.js";
+import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import { CartWidget } from "./CartWidget.js";
 
 export const NabVar = () => {
   return (
-    <div className='NavBar'>
+    <div className="NavBar">
       <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home"><CartWidget/></Navbar.Brand>
-          
+        <Container className="containerNav">
+          <Navbar.Brand href="#">
+            <CartWidget />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Inicio</Nav.Link>
               <Nav.Link href="#link">Novedades</Nav.Link>
               <NavDropdown title="Productos" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Producto 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">
+                  Producto 1
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Producto 2
                 </NavDropdown.Item>
@@ -34,4 +37,4 @@ export const NabVar = () => {
       </Navbar>
     </div>
   );
-}
+};

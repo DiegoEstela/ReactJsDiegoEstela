@@ -1,4 +1,19 @@
+.containerNav {
+  width: 100%;
+  background-color: rgb(250, 167, 167);
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+}
+
 .cartWidget {
   height: 90px;
   padding: 0px;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
 }
