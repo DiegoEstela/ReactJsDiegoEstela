@@ -1,17 +1,13 @@
 import React from "react";
 import "../ItemListContainer/ItemListContainer.css";
-import fotoIncioR from "../../img/barbijos.JPG";
-import logoIncio from "../../img/logo.png";
+import percha from "../../img/percha.png";
 
 export function ItemListContainer() {
   return (
     <div className="containerHome" id="inicio">
-      <div className="inicioL">
-        <img className="logoInicio" src={logoIncio} alt="logoIncio" />
-      </div>
-      <div className="inicioR">
-        <img className="fotoInicio" src={fotoIncioR} alt="logo" />
-      </div>
+      <h1 className="titulo">NBP Estudio</h1>
+      <h2 className="h2Inicio">desing</h2>
+      <img className="imginicio" src={percha} alt="percha" />
     </div>
   );
 }

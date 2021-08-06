@@ -1,7 +1,9 @@
 .containerNav {
-  width: 100%;
-  background-color: rgb(250, 167, 167);
-  padding: 0%;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  max-width: 100%;
+  background-color: rgb(250, 191, 191);
+  padding: 0px 15px;
   margin: 0%;
   display: flex;
   justify-content: center;
