@@ -14,8 +14,8 @@ export const NabVar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Inicio</Nav.Link>
-              <Nav.Link href="#link">Novedades</Nav.Link>
+              <Nav.Link href="#inicio">Inicio</Nav.Link>
+              <Nav.Link href="#novedades">Novedades</Nav.Link>
               <NavDropdown title="Productos" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Producto 1

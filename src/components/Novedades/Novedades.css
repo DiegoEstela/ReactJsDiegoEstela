@@ -1,0 +1,38 @@
+.containerNovedades {
+  position: relative;
+}
+
+.imgUno {
+  width: 18%;
+  left: 40px;
+  margin-top: 5px;
+  margin-left: 8%;
+}
+
+.imgDos {
+  width: 24%;
+  margin-top: 5px;
+  margin-left: 1%;
+}
+.design {
+  width: 15%;
+  margin-left: 4%;
+}
+
+.modelo {
+  position: absolute;
+  margin-top: 10%;
+  right: 7%;
+  width: 25%;
+  color: white;
+  background-color: teal;
+}
+
+.h3Novedades {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 10%;
+  color: white;
+  background-color: teal;
+}

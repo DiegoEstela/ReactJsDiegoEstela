@@ -3,7 +3,7 @@
   height: 230px;
   width: 100%;
   text-align: center;
-  position: absolute;
+  position: relative;
 }
 
 .titulo {
@@ -21,7 +21,7 @@
 }
 
 .imginicio {
-  position: relative;
+  position: absolute;
   height: 100px;
-  left: 35%;
+  right: 5%;
 }
