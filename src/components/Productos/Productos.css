@@ -1,0 +1,22 @@
+.tituloProductos {
+  color: white;
+  background-color: teal;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cardPrud {
+  margin-left: 3%;
+}
+.cardImg {
+  padding: 20px;
+  align-content: center;
+  width: 100%;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}

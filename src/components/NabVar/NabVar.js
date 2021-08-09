@@ -16,7 +16,11 @@ export const NabVar = () => {
             <Nav className="me-auto">
               <Nav.Link href="#inicio">Inicio</Nav.Link>
               <Nav.Link href="#novedades">Novedades</Nav.Link>
-              <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown
+                href="#prductos"
+                title="Productos"
+                id="basic-nav-dropdown"
+              >
                 <NavDropdown.Item href="#action/3.1">
                   Producto 1
                 </NavDropdown.Item>
