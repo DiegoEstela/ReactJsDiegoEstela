@@ -1,13 +1,22 @@
+.prodContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+
 .tituloProductos {
   color: white;
   background-color: teal;
   margin-top: 5px;
   padding: 10px;
   text-align: center;
+  display: block;
 }
 
 .cardPrud {
-  margin-left: 3%;
+  display: flex;
+  margin: 10px;
 }
 .cardImg {
   padding: 20px;
@@ -19,4 +28,11 @@
   display: flex;
   justify-content: space-around;
   background-color: white;
+}
+
+.card-body {
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
