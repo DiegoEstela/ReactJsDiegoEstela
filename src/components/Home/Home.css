@@ -1,0 +1,27 @@
+.containerHome {
+  background-color: rgb(250, 191, 191);
+  height: 230px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.titulo {
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 40px;
+  font-size: 3em;
+}
+
+.h2Inicio {
+  font-family: "MonteCarlo", cursive;
+  font-size: 1.5em;
+  color: red;
+}
+
+.imginicio {
+  position: absolute;
+  height: 100px;
+  right: 5%;
+}

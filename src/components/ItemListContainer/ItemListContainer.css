@@ -1,27 +1,38 @@
-.containerHome {
-  background-color: rgb(250, 191, 191);
-  height: 230px;
-  width: 100%;
-  text-align: center;
-  position: relative;
+.prodContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-between;
 }
 
-.titulo {
-  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+.tituloProductos {
   color: white;
-  padding-top: 40px;
-  font-size: 3em;
+  background-color: teal;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  display: block;
 }
 
-.h2Inicio {
-  font-family: "MonteCarlo", cursive;
-  font-size: 1.5em;
-  color: red;
+.cardPrud {
+  display: flex;
+  margin: 10px;
+}
+.cardImg {
+  padding: 20px;
+  align-content: center;
+  width: 100%;
 }
 
-.imginicio {
-  position: absolute;
-  height: 100px;
-  right: 5%;
+.cardFooter {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.card-body {
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
