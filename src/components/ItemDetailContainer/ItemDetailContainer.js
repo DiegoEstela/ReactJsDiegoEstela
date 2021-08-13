@@ -1,10 +1,9 @@
-import "../Apis/ItemList";
 import { React, useEffect, useState } from "react";
-import { ItemList } from "../ItemList/ItemList";
 import productos from "../Apis/ItemList";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
-export function ItemListContainer() {
-  const [Prod, setProd] = useState([]);
+export function ItemDetailContainer() {
+  const [ProdDetail, setProd] = useState([]);
 
   useEffect(() => {
     const task = () =>
@@ -17,5 +16,5 @@ export function ItemListContainer() {
     task().then((data) => setProd(data));
   }, []);
 
-  return <ItemList items={Prod} />;
+  return <ItemDetail ItemDetail={ProdDetail} />;
 }

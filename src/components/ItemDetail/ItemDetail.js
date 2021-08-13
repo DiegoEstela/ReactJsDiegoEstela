@@ -1,9 +1,8 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
-import productos from "../Apis/ItemList";
 
-export function ItemDetailContainer() {
-  const mostrar = productos.filter((productos) => productos.mostrar === "si");
+export default function ItemDetail({ ItemDetail }) {
+  const mostrar = ItemDetail.filter((productos) => productos.mostrar === "si");
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
@@ -20,6 +19,7 @@ export function ItemDetailContainer() {
                   Barbijo de: <b>{item.nombre}</b>
                 </Card.Title>
                 <span> Precio: ${item.Precio}</span>
+                <p>{item.descripcion}</p>
 
                 <Card.Footer className="cardFooter">
                   <Button variant="primary">Ver </Button>
