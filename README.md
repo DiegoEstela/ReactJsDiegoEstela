@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Bienvido a NBPEstudio una Web de diseño de Indumentaria y accesorios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este Proyecto fue creado utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Para comenzar
 
-In the project directory, you can run:
+1. Debe clonar el repositorio utilizando :
 
-### `npm start`
+### Git clone https://github.com/Diezte/ReactJsDiegoEstela.git
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
