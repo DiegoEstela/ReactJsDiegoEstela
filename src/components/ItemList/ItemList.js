@@ -7,7 +7,7 @@ export function ItemList({ items }) {
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
-        NOVEDADES
+        PRODUCTOS
       </h2>
       <div className="prodContainer">
         {items.map((item) => (

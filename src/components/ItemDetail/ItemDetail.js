@@ -3,6 +3,7 @@ import { Card, Button } from "react-bootstrap";
 
 export default function ItemDetail({ ItemDetail }) {
   const mostrar = ItemDetail.filter((productos) => productos.mostrar === "si");
+
   return (
     <div>
       <h2 id="productos" className="tituloProductos">

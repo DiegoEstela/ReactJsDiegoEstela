@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import percha from "../../img/percha.png";
-
 export function Home() {
   return (
     <div className="containerHome" id="inicio">

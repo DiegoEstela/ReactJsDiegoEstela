@@ -2,37 +2,54 @@ import React from "react";
 import "./NabVar.css";
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 import { CartWidget } from "./CartWidget.js";
+import { Link } from "react-router-dom";
 
 export const NabVar = () => {
   return (
     <div className="NavBar">
       <Navbar bg="light" expand="lg">
         <Container className="containerNav">
-          <Navbar.Brand href="#">
-            <CartWidget />
+          <Navbar.Brand>
+            <Link className="li" to="/">
+              <CartWidget />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#inicio">Inicio</Nav.Link>
-              <Nav.Link href="#novedades">Novedades</Nav.Link>
+              <Nav.Link>
+                <Link className="li" to="/">
+                  Inicio
+                </Link>
+              </Nav.Link>
+              <Nav.Link className="li" href="#novedades">
+                Novedades
+              </Nav.Link>
               <NavDropdown
                 href="#prductos"
-                title="Productos"
+                title="Barbijos"
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1">
-                  Producto 1
+                  <Link className="li" to="ItemList">
+                    Todos
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Producto 2
+                  <Link className="li" to="ItemList">
+                    Por telas
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Producto 2
+                  <Link className="li" to="/diseño">
+                    Por Diseño
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Producto 3
+                  <Link className="li" to="/ItemDetail">
+                    Detalles
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
