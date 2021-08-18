@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import "../ItemList/ItemList.css";
 
 export function ItemList({ items }) {
@@ -15,10 +17,23 @@ export function ItemList({ items }) {
             <Card className="cardPrud " style={{ width: "14rem" }}>
               <Card.Img className="cardImg" src={item.imagen} />
               <Card.Body>
-                <Card.Title key={item.id}> barbijo: {item.nombre}</Card.Title>
+                <Card.Title key={item.id}>
+                  {" "}
+                  barbijo: <br></br>
+                  {item.nombre}
+                </Card.Title>
 
                 <Card.Footer className="cardFooter">
-                  <Button variant="primary">Ver lista de productos</Button>
+                  <Link to="/product/:productID">
+                    <Button
+                      role="link"
+                      type="button"
+                      variant="primary"
+                      title="Ver detalles"
+                    >
+                      Ver Detalles
+                    </Button>
+                  </Link>
                 </Card.Footer>
               </Card.Body>
             </Card>

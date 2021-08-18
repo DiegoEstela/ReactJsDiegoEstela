@@ -1,6 +1,6 @@
 .containerHome {
   background-color: rgb(250, 191, 191);
-  height: 230px;
+  height: 150px;
   width: 100%;
   text-align: center;
   position: relative;
@@ -22,6 +22,7 @@
 
 .imginicio {
   position: absolute;
-  height: 100px;
-  right: 5%;
+  top: 80px;
+  height: 80px;
+  right: 2%;
 }

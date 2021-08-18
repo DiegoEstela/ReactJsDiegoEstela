@@ -1,0 +1,12 @@
+.count {
+  display: flex;
+}
+
+.btnRestar {
+}
+
+.numCount {
+  width: 40px;
+  text-align: center;
+  font-size: 20px;
+}

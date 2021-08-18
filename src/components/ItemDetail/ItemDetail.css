@@ -1,0 +1,39 @@
+.cardDetail {
+  margin: 1%;
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+  border: black solid;
+}
+.bodyDetail {
+  margin-top: 3%;
+  grid-area: "Body";
+  text-align: center;
+}
+.cardImgDetail {
+  width: 25%;
+  margin: 4%;
+}
+h4 {
+  text-align: left;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+.precio {
+  text-align: left;
+}
+
+.cardFooteruno {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  left: 30%;
+  width: 10%;
+}
+
+.btn {
+  display: flex;
+}

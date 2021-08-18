@@ -1,3 +1,4 @@
+import img1 from "../../img/productos/BarjijosVenta/blancoYnegro.jpg";
 export const productos = [
   {
     id: "1",
@@ -6,8 +7,7 @@ export const productos = [
     stock: "3",
     Precio: 220,
     Condicion: "novedad",
-    imagen:
-      "https://i.picsum.photos/id/1/200/200.jpg?hmac=jZB9EZ0Vtzq-BZSmo7JKBBKJLW46nntxq79VMkCiBG8",
+    imagen: img1,
     descripcion:
       "Confecionado a mano, adaptable al rostro, suavidad y comodidad para el uso de todos los dias",
     mostrar: "no",
@@ -42,7 +42,7 @@ export const productos = [
     id: "4",
     nombre: "Tela",
     materia: "Tela",
-    stock: "5",
+    stock: "8",
     Precio: 200,
     Condicion: "novedad",
     imagen:
