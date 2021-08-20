@@ -1,11 +1,14 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 import "../ItemList/ItemList.css";
 
 export function ItemList({ items }) {
-  console.log(items);
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
@@ -24,7 +27,7 @@ export function ItemList({ items }) {
                 </Card.Title>
 
                 <Card.Footer className="cardFooter">
-                  <Link to="/product/:productID">
+                  <Link to={`/product/${item.id}`}>
                     <Button
                       role="link"
                       type="button"

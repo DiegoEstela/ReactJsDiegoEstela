@@ -1,4 +1,7 @@
 import img1 from "../../img/productos/BarjijosVenta/blancoYnegro.jpg";
+import img2 from "../../img/productos/BarjijosVenta/barbijoJean.jpg";
+import img3 from "../../img/productos/BarjijosVenta/barbijoCuero.jpg";
+import img4 from "../../img/productos/BarjijosVenta/barbijoTela.jpg";
 export const productos = [
   {
     id: "1",
@@ -19,8 +22,7 @@ export const productos = [
     stock: "2",
     Precio: 175,
     Condicion: "enlista",
-    imagen:
-      "https://i.picsum.photos/id/66/200/200.jpg?hmac=gaKXe-rWmo5fSEm79TTkW_yFJLECw3FdRCh6Dm7jp4g",
+    imagen: img2,
     descripcion:
       "Confecionado a mano, adaptable al rostro, suavidad y comodidad para el uso de todos los dias",
     mostrar: "no",
@@ -32,8 +34,7 @@ export const productos = [
     stock: "2",
     Precio: 210,
     Condicion: "novedad",
-    imagen:
-      "https://i.picsum.photos/id/691/200/200.jpg?hmac=vQryVYx_-QSM9WMaRjBhUI7SB8Ad1FTmG9QkaQRgHFc",
+    imagen: img3,
     descripcion:
       "Confecionado a mano, adaptable al rostro, suavidad y comodidad para el uso de todos los dias",
     mostrar: "no",
@@ -45,8 +46,7 @@ export const productos = [
     stock: "8",
     Precio: 200,
     Condicion: "novedad",
-    imagen:
-      "https://i.picsum.photos/id/1000/200/200.jpg?hmac=U6gBcO-m8lNXspqhLW17ugDZ1Z3cEcCQj07Wp9Nq7IQ",
+    imagen: img4,
     descripcion:
       "Confecionado a mano, adaptable al rostro, suavidad y comodidad para el uso de todos los dias",
     mostrar: "si",

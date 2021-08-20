@@ -15,10 +15,8 @@ const Router = () => {
       <Switch>
         <Route exact path="/" component={Novedades} />
         <Route exact path="/Cart" component={Cart} />
-        <Route path="/ItemList">
-          <ItemListContainer />
-        </Route>
-        <Route path="/product/:productID" component={ItemDetailContainer} />
+        <Route path="/ItemList" component={ItemListContainer} />
+        <Route path="/product/:id" component={ItemDetailContainer} />
       </Switch>
     </BrowserRouter>
   );
