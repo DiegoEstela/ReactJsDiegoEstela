@@ -31,24 +31,19 @@ export const NabVar = () => {
                 id="basic-nav-dropdown"
               >
                 <NavDropdown.Item href="#action/3.1">
-                  <Link className="li" to="ItemList">
+                  <Link className="li" to="/ItemList">
                     Todos
                   </Link>
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.2">
-                  <Link className="li" to="ItemList">
+                  <Link className="li" to="/ItemList">
                     Por telas
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  <Link className="li" to="/diseño">
+                  <Link className="li" to="/ItemList">
                     Por Diseño
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  <Link className="li" to="/ItemDetail">
-                    Detalles
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>

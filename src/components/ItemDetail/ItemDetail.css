@@ -1,9 +1,15 @@
-.cardDetail {
-  margin: 1%;
+.prodContainerDetail {
   display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardDetail {
+  margin-top: 2%;
+  display: flex;
+  box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
   position: relative;
   border-radius: 5px;
-  border: black solid;
 }
 .bodyDetail {
   margin-top: 3%;
@@ -36,4 +42,22 @@ h5 {
 
 .btn {
   display: flex;
+}
+
+.finalizarPedido {
+  margin: 3% 0%;
+}
+
+.linkDetail {
+  text-decoration: none;
+  list-style: none;
+  width: 161px;
+  margin: 0%;
+}
+
+.linkDetailbtn {
+  width: 161px;
+  margin: 0%;
+  text-align: center;
+  justify-content: center;
 }

@@ -14,7 +14,7 @@ const Router = () => {
       <Home />
       <Switch>
         <Route exact path="/" component={Novedades} />
-        <Route exact path="/Cart" component={Cart} />
+        <Route path="/Cart" component={Cart} />
         <Route path="/ItemList" component={ItemListContainer} />
         <Route path="/product/:id" component={ItemDetailContainer} />
       </Switch>
