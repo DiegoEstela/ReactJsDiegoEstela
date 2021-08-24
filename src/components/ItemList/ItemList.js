@@ -2,10 +2,10 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
+import { Loading } from "../Loader/Loading";
 import "../ItemList/ItemList.css";
 
-export function ItemList({ items }) {
+export function ItemList({ items, Load }) {
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
@@ -14,35 +14,39 @@ export function ItemList({ items }) {
       <h2 id="productos" className="tituloProductos">
         PRODUCTOS
       </h2>
-      <div className="prodContainer">
-        {items.map((item) => (
-          <div>
-            <Card className="cardPrud " style={{ width: "14rem" }}>
-              <Card.Img className="cardImg" src={item.imagen} />
-              <Card.Body>
-                <Card.Title key={item.id}>
-                  {" "}
-                  barbijo: <br></br>
-                  {item.nombre}
-                </Card.Title>
+      {Load ? (
+        <Loading />
+      ) : (
+        <div className="prodContainer">
+          {items.map((item) => (
+            <div>
+              <Card className="cardPrud " style={{ width: "14rem" }}>
+                <Card.Img className="cardImg" src={item.imagen} />
+                <Card.Body>
+                  <Card.Title key={item.id}>
+                    {" "}
+                    barbijo: <br></br>
+                    {item.nombre}
+                  </Card.Title>
 
-                <Card.Footer className="cardFooter">
-                  <Link to={`/product/${item.id}`}>
-                    <Button
-                      role="link"
-                      type="button"
-                      variant="primary"
-                      title="Ver detalles"
-                    >
-                      Ver Detalles
-                    </Button>
-                  </Link>
-                </Card.Footer>
-              </Card.Body>
-            </Card>
-          </div>
-        ))}
-      </div>
+                  <Card.Footer className="cardFooter">
+                    <Link to={`/product/${item.id}`}>
+                      <Button
+                        role="link"
+                        type="button"
+                        variant="primary"
+                        title="Ver detalles"
+                      >
+                        Ver Detalles
+                      </Button>
+                    </Link>
+                  </Card.Footer>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

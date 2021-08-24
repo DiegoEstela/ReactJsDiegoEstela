@@ -5,17 +5,19 @@ import productos from "../Apis/ItemList";
 
 export function ItemListContainer() {
   const [Prod, setProd] = useState([]);
+  const [Load, setLoad] = useState(true);
 
   useEffect(() => {
     const task = () =>
       new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(productos);
-        }, 2000);
+          setLoad(false);
+        }, 3000);
       });
 
     task().then((data) => setProd(data));
   }, []);
 
-  return <ItemList items={Prod} />;
+  return <ItemList items={Prod} Load={Load} />;
 }
