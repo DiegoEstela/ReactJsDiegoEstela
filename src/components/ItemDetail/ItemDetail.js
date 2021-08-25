@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./ItemDetail.css";
 import ItemCount from "../ItemCount.js/ItemCount";
 import { useParams } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { CartContext } from "../../Context/CartContext";
 
 export default function ItemDetail() {
   const [count, setCount] = useState(1);
@@ -12,6 +13,10 @@ export default function ItemDetail() {
   const [item, setItem] = useState(null);
   const [finalizar, setFinalizar] = useState(false);
   const switchFinalizar = () => setFinalizar(!finalizar);
+  const { addProduct } = useContext(CartContext);
+  const goToPayment = () => {
+    addProduct(item.id, item.nombre, item.precio, count);
+  };
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("items"));
@@ -46,6 +51,7 @@ export default function ItemDetail() {
                       <Button
                         className="linkDetailbtn"
                         title="Agregar al Carro"
+                        onClick={goToPayment()}
                       >
                         Agregar al Carro
                       </Button>
