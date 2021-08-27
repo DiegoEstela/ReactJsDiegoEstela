@@ -24,7 +24,6 @@ export function CartProvider({ children }) {
       ]);
     }
   };
-  //  prueba
 
   const actualizarCart = (newCart) => {
     const sortedItems = newCart.sort((a, b) =>
@@ -43,6 +42,11 @@ export function CartProvider({ children }) {
     cart.reduce((current, item) => current + item.precio * item.qty, 0);
 
   const contadorItems = () => cart.length;
+
+  const vaciarCarro = () => {
+    setCart([]);
+    sessionStorage.removeItem("Carrito");
+  };
   return (
     <CartContext.Provider
       value={{
@@ -53,6 +57,7 @@ export function CartProvider({ children }) {
         eliminarItem,
         calcularTotal,
         contadorItems,
+        vaciarCarro,
       }}
     >
       {children}

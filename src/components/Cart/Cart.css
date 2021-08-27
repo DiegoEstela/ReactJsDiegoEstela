@@ -16,8 +16,32 @@
   background-color: rgb(250, 191, 191);
   width: 70%;
   text-align: center;
+  box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
 }
 
-.eliminar {
-  background-color: red;
+.bodyCarrito {
+  display: flex;
+  justify-content: center;
+}
+
+.carritoVacio {
+  margin-top: 3%;
+  background-image: url("../../assets/Perchas.JPG");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 30%;
+  border-radius: 4%;
+  box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
+}
+
+h2 {
+  font-size: 300%;
+  color: white;
+}
+.vaciarCarro {
+  background-color: white;
+  color: red;
+  border: none;
 }

@@ -4,7 +4,8 @@ import { Table } from "react-bootstrap";
 import { CartContext } from "../../Context/CartContext";
 
 export const CartTable = () => {
-  const { cart, eliminarItem, calcularTotal } = useContext(CartContext);
+  const { cart, eliminarItem, calcularTotal, vaciarCarro } =
+    useContext(CartContext);
 
   const calculatePrice = (price, qty) => {
     return price * qty;
@@ -51,6 +52,11 @@ export const CartTable = () => {
         </tbody>
         <tfoot>
           <tr>
+            <td>
+              <button onClick={vaciarCarro} className="vaciarCarro">
+                Vaciar carro
+              </button>
+            </td>
             <td colSpan="6">Total: ${calcularTotal()}</td>
           </tr>
         </tfoot>
