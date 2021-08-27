@@ -1,0 +1,23 @@
+.itemsCarrito {
+  color: white;
+  background-color: teal;
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+.cart {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.tablaCarro {
+  background-color: rgb(250, 191, 191);
+  width: 70%;
+  text-align: center;
+}
+
+.eliminar {
+  background-color: red;
+}

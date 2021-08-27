@@ -14,8 +14,9 @@ export default function ItemDetail() {
   const [finalizar, setFinalizar] = useState(false);
   const switchFinalizar = () => setFinalizar(!finalizar);
   const { addProduct } = useContext(CartContext);
+
   const goToPayment = () => {
-    addProduct(item.id, item.nombre, item.precio, count);
+    addProduct(item.id, item.nombre, item.Precio, count);
   };
 
   useEffect(() => {
