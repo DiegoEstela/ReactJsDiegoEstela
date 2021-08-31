@@ -1,7 +1,7 @@
 .containerHome {
   background-color: rgb(250, 191, 191);
   height: 150px;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   position: relative;
 }

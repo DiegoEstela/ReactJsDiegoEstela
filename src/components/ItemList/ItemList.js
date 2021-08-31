@@ -9,6 +9,7 @@ export function ItemList({ items }) {
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
+
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
@@ -18,12 +19,12 @@ export function ItemList({ items }) {
         {items.map((item) => (
           <div>
             <Card className="cardPrud " style={{ width: "14rem" }}>
-              <Card.Img className="cardImg" src={item.imagen} />
+              <Card.Img className="cardImg" src={item.image} />
               <Card.Body>
                 <Card.Title key={item.id}>
                   {" "}
-                  barbijo: <br></br>
-                  {item.nombre}
+                  Barbijo: <br></br>
+                  <b> {item.nombre}</b>
                 </Card.Title>
 
                 <Card.Footer className="cardFooter">

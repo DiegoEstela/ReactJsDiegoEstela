@@ -16,7 +16,7 @@ export default function ItemDetail() {
   const { addProduct } = useContext(CartContext);
 
   const goToPayment = () => {
-    addProduct(item.id, item.nombre, item.Precio, count);
+    addProduct(item.id, item.nombre, item.precio, count);
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export default function ItemDetail() {
       <div className="prodContainerDetail">
         <div>
           <div className="cardDetail ">
-            <img className="cardImgDetail" src={item.imagen} alt="img1" />
+            <img className="cardImgDetail" src={item.image} alt="img1" />
             <div className="bodyDetail">
               <h2 className="tituloDetail" key={item.id}>
                 {" "}
@@ -43,7 +43,7 @@ export default function ItemDetail() {
               </h2>
               <h4>Stock: {item.stock}</h4>
 
-              <h5 className="precio"> Precio: ${item.Precio}</h5>
+              <h5 className="precio"> Precio: ${item.precio}</h5>
               <p>{item.descripcion}</p>
               <div className="cardFooteruno">
                 <div className="agregarAlCarro">

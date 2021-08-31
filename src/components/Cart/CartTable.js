@@ -44,7 +44,7 @@ export const CartTable = () => {
                   title="Eliminar"
                   onClick={eliminarItemCart}
                 >
-                  Elimar producto
+                  Eliminar
                 </button>
               </td>
             </tr>
