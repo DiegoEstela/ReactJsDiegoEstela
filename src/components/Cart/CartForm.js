@@ -1,22 +1,17 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Form, Row, InputGroup, Col, Button } from "react-bootstrap";
 import { getFirestore } from "../../firebase";
 import { CartContext } from "../../Context/CartContext";
+import { UserContext } from "../../Context/UserContext";
 
 export const CartForm = () => {
   const { cart, calcularTotal } = useContext(CartContext);
-  const [OrdenId, setOrdenId] = useState(null);
-  const [UserInfo, setUserInfo] = useState({
-    nombre: "",
-    telefono: "",
-    email: "",
-  });
-  console.log(OrdenId);
+  const { setOrdenId, UserInfo, setUserInfo } = useContext(UserContext);
   const { nombre, telefono, email } = UserInfo;
+
   const handleChangeUser = (event) => {
     setUserInfo({ ...UserInfo, [event.target.name]: event.target.value });
   };
-
   const finalizarCompra = (event) => {
     event.preventDefault();
     const newItems = cart.map((item) => ({
@@ -37,7 +32,7 @@ export const CartForm = () => {
       items: newItems,
       total: calcularTotal(),
     };
-    console.log(nuevaOrden);
+
     const db = getFirestore();
     const orders = db.collection("orders");
     const batch = db.batch();
