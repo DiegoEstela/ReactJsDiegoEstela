@@ -38,9 +38,13 @@
   box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
 }
 
+.btnCarritoVacio {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 300%;
-  color: white;
+  color: teal;
 }
 .vaciarCarro {
   background-color: white;
@@ -50,7 +54,35 @@ h2 {
 
 .form {
   margin: 3%;
-
   padding: 10px;
+  box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
+}
+
+.datosCompras {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.btnDatosCompras {
+  text-decoration: none;
+}
+
+.ordenId {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.datosComprasContainer {
+  margin-top: 3%;
+  background-color: teal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 30%;
+  border-radius: 4%;
   box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
 }

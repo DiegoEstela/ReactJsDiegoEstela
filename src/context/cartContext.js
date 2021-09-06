@@ -43,8 +43,10 @@ export function CartProvider({ children }) {
 
   const contadorItems = () => cart.length;
 
-  const vaciarCarro = () => {
+  const vaciarCarro = (event) => {
+    event.preventDefault();
     setCart([]);
+
     sessionStorage.removeItem("Carrito");
   };
   return (

@@ -24,7 +24,7 @@
   position: absolute;
   top: 85px;
   height: 60px;
-  right: 2%;
+  right: 10px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
   background-color: rgb(250, 201, 201);
   border-radius: 50%;
@@ -40,6 +40,7 @@
   top: 115px;
   height: 30px;
   width: 30px;
-  right: 90px;
+  right: 50px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
+  z-index: 1;
 }

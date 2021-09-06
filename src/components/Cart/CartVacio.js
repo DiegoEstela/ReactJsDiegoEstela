@@ -8,8 +8,8 @@ export const CartVacio = () => {
     <div className="bodyCarrito">
       <div className="carritoVacio">
         <h2>Carrito Vacio</h2>
-        <Link to="/ItemList">
-          <Button>Volver a Productos</Button>
+        <Link className="btnCarritoVacio" to="/ItemList">
+          <Button className="btnCarritoVacio">Volver a Productos</Button>
         </Link>
       </div>
     </div>
