@@ -5,7 +5,7 @@ import { getFirestore } from "../../firebase";
 
 export function ItemListContainer() {
   const [Prod, setProd] = useState([]);
-
+  const [Loading, setLoading] = useState(true);
   useEffect(() => {
     const db = getFirestore();
     const itemCollection = db.collection("items");
@@ -14,8 +14,9 @@ export function ItemListContainer() {
       if (querySnapshot.size === 0) {
         console.log("No items");
       }
+      setLoading(false);
       setProd(querySnapshot.docs.map((document) => document.data()));
     });
   }, []);
-  return <ItemList items={Prod} />;
+  return <ItemList items={Prod} Loading={Loading} />;
 }

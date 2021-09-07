@@ -34,13 +34,13 @@ export default function ItemDetail() {
       </h2>
       <div className="prodContainerDetail">
         <div>
-          <div className="cardDetail ">
+          <div className="cardDetail">
             <img className="cardImgDetail" src={item.image} alt="img1" />
             <div className="bodyDetail">
-              <h2 className="tituloDetail" key={item.id}>
+              <h3 className="tituloDetail" key={item.id}>
                 {" "}
-                Barbijo de: <b>{item.nombre}</b>
-              </h2>
+                Barbijo: <b>{item.nombre}</b>
+              </h3>
               <h4>Stock: {item.stock}</h4>
 
               <h5 className="precio"> Precio: ${item.precio}</h5>

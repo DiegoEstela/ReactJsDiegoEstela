@@ -40,7 +40,7 @@ export const CartForm = () => {
     orders.add(nuevaOrden).then((response) => {
       cart.forEach((item) => {
         const docRef = db.collection("items").doc(item.id);
-        batch.update(docRef, { stock: item.stock - item.stock });
+        batch.update(docRef, { stock: item.stock - item.qty });
       });
       batch.commit();
       setOrdenId(response.id);

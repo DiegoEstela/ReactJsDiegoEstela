@@ -2,14 +2,20 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
+import { Spinner } from "react-bootstrap";
 import "../ItemList/ItemList.css";
 
-export function ItemList({ items }) {
+export function ItemList({ items, Loading }) {
   useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
-
+  if (Loading) {
+    return (
+      <div className="spinnerContainer">
+        <Spinner className="spinner" animation="border" variant="danger" />
+      </div>
+    );
+  }
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
@@ -28,12 +34,13 @@ export function ItemList({ items }) {
                 </Card.Title>
 
                 <Card.Footer className="cardFooter">
-                  <Link to={`/product/${item.id}`}>
+                  <Link className="detalles" to={`/product/${item.id}`}>
                     <Button
                       role="link"
                       type="button"
                       variant="primary"
                       title="Ver detalles"
+                      className="detalles"
                     >
                       Ver Detalles
                     </Button>

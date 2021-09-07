@@ -1,6 +1,6 @@
 import React from "react";
 import "./NabVar.css";
-import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { CartWidget } from "./CartWidget.js";
 import { Link } from "react-router-dom";
 
@@ -22,31 +22,16 @@ export const NabVar = () => {
                   Inicio
                 </Link>
               </Nav.Link>
-              <Nav.Link className="li" href="#novedades">
-                Novedades
+              <Nav.Link className="li" to="/Novedades">
+                <Link className="li" to="/Novedades">
+                  Novedades
+                </Link>
               </Nav.Link>
-              <NavDropdown
-                href="#prductos"
-                title="Barbijos"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="#action/3.1">
-                  <Link className="li" to="/ItemList">
-                    Todos
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">
-                  <Link className="li" to="/ItemList">
-                    Por telas
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  <Link className="li" to="/ItemList">
-                    Por Diseño
-                  </Link>
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link className="li" to="/ItemList">
+                <Link className="li" to="/ItemList">
+                  Barbijos
+                </Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

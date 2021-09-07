@@ -17,6 +17,7 @@
 .cardPrud {
   display: flex;
   margin: 10px;
+  margin-left: 40px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
 }
 .cardImg {
@@ -36,4 +37,15 @@
   margin: 0px;
   padding: 0px;
   text-align: center;
+}
+
+.detalles {
+  text-decoration: none;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
 }

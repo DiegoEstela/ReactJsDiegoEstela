@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 const DatosCompras = () => {
   const { UserInfo, OrdenId } = useContext(UserContext);
   const { vaciarCarro } = useContext(CartContext);
-  const { nombre, email } = UserInfo;
+  const { nombre } = UserInfo;
 
   return (
     <div className="bodyCarrito">
