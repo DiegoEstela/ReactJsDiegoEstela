@@ -41,6 +41,9 @@
 
 .detalles {
   text-decoration: none;
+  background-color: teal;
+  border-radius: 10px;
+  border: none;
 }
 
 .spinnerContainer {

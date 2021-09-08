@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Cart.css";
-import { Table } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 import { CartContext } from "../../Context/CartContext";
 
 export const CartTable = () => {
@@ -37,25 +37,26 @@ export const CartTable = () => {
               <td>{item.precio}</td>
               <td>{item.qty}</td>
               <td>{calculatePrice(item.precio, item.qty)}</td>
-              <td>
-                <button
-                  className="eliminar"
+              <td className="eliminar">
+                <Button
+                  variant="outline-danger"
+                  className="btnEliminar"
                   value={item.id}
                   title="Eliminar"
                   onClick={eliminarItemCart}
                 >
-                  Eliminar
-                </button>
+                  -
+                </Button>
               </td>
             </tr>
           ))}
         </tbody>
         <tfoot>
           <tr>
-            <td>
-              <button onClick={vaciarCarro} className="vaciarCarro">
+            <td className="vaciarCarro">
+              <Button onClick={vaciarCarro} variant="outline-danger">
                 Vaciar carro
-              </button>
+              </Button>
             </td>
             <td colSpan="6">Total: ${calcularTotal()}</td>
           </tr>

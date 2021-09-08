@@ -36,9 +36,9 @@ export function ItemList({ items, Loading }) {
                 <Card.Footer className="cardFooter">
                   <Link className="detalles" to={`/product/${item.id}`}>
                     <Button
+                      variant="outline-light"
                       role="link"
                       type="button"
-                      variant="primary"
                       title="Ver detalles"
                       className="detalles"
                     >

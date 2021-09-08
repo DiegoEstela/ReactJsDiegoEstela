@@ -25,8 +25,6 @@ export default function ItemDetail() {
     setItem(item);
   }, [id]);
 
-  if (!item) return <div> Loading...</div>;
-
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
@@ -44,7 +42,7 @@ export default function ItemDetail() {
               <h4>Stock: {item.stock}</h4>
 
               <h5 className="precio"> Precio: ${item.precio}</h5>
-              <p>{item.descripcion}</p>
+              <p className="descripcion">{item.descripcion}</p>
               <div className="cardFooteruno">
                 <div className="agregarAlCarro">
                   {finalizar ? (

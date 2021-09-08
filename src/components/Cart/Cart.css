@@ -16,6 +16,7 @@
 .tablaCarro {
   background-color: rgb(250, 191, 191);
   width: 70%;
+  height: auto;
   text-align: center;
   box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
 }
@@ -47,9 +48,9 @@ h2 {
   color: teal;
 }
 .vaciarCarro {
-  background-color: white;
-  color: red;
-  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 0%;
 }
 
 .form {
@@ -85,4 +86,15 @@ h2 {
   width: 30%;
   border-radius: 4%;
   box-shadow: 5px 10px 17px -5px rgba(0, 0, 0, 75);
+}
+
+.eliminar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+.btnEliminar {
 }
