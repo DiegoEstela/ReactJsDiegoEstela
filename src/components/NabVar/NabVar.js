@@ -45,7 +45,9 @@ export const NabVar = () => {
                     alt="user"
                     className="userImg"
                   />
-                  Iniciar Sesion
+                  <Link className="li" to="/Login">
+                    Iniciar sesion
+                  </Link>
                 </Nav.Link>
               )}
 

@@ -8,7 +8,7 @@
 .tituloProductos {
   color: white;
   background-color: teal;
-  margin-top: 5px;
+
   padding: 10px;
   text-align: center;
   display: block;
@@ -19,6 +19,12 @@
   margin: 10px;
   margin-left: 40px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
+}
+
+.cardPrud:hover {
+  background-color: rgb(238, 237, 237);
+  box-shadow: 5px 10px 17px 1px rgba(0, 0, 0, 75);
+  transition: 0.5s;
 }
 .cardImg {
   padding: 20px;
@@ -46,6 +52,14 @@
   border: none;
 }
 
+.detalles:hover {
+  text-decoration: none;
+  background-color: teal;
+  border-radius: 10px;
+  border: none;
+  color: pink;
+  box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
+}
 .spinnerContainer {
   display: flex;
   justify-content: center;

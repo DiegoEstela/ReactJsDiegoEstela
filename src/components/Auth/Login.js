@@ -44,7 +44,7 @@ export const Login = () => {
           <p>
             No tenes usuario?{" "}
             <Link className="linkLogin" to="/signup">
-              <span>Crear Usuario</span>
+              <span>Registrate ahora</span>
             </Link>{" "}
           </p>
         </div>

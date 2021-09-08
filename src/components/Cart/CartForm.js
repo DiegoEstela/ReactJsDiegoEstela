@@ -16,6 +16,7 @@ export const CartForm = () => {
   };
   const finalizarCompra = (event) => {
     event.preventDefault();
+
     const newItems = cart.map((item) => ({
       item: {
         id: item.id,
@@ -78,7 +79,6 @@ export const CartForm = () => {
           <Form.Group as={Col} md="4" controlId="validationCustomUsername">
             <Form.Label>Email</Form.Label>
             <InputGroup hasValidation>
-              <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Email"
@@ -93,7 +93,7 @@ export const CartForm = () => {
             </InputGroup>
           </Form.Group>
         </Row>
-        <Row className="mb-3">
+        <Row className="mb-1">
           <Form.Group as={Col} md="6" controlId="validationCustom03">
             <Form.Label>Direccion</Form.Label>
             <Form.Control type="text" placeholder="Direccion" required />

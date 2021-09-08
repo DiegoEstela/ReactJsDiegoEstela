@@ -23,7 +23,7 @@ const Router = () => {
             <NabVar />
             <Home />
             <Switch>
-              <PrivateRoute exact path="/" component={Inicio} />
+              <Route exact path="/" component={Inicio} />
               <PrivateRoute path="/Cart" component={Cart} />
               <Route path="/ItemList" component={ItemListContainer} />
               <Route path="/Novedades" component={ListNovedades} />

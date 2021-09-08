@@ -95,3 +95,13 @@ h2 {
   padding: 0%;
   margin: 0%;
 }
+
+.btnCarritoVacio {
+  background-color: teal;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.btnCarritoVacio:hover {
+  color: aliceblue;
+}

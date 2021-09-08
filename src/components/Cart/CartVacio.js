@@ -9,7 +9,9 @@ export const CartVacio = () => {
       <div className="carritoVacio">
         <h2>Carrito Vacio</h2>
         <Link className="btnCarritoVacio" to="/ItemList">
-          <Button className="btnCarritoVacio">Volver a Productos</Button>
+          <Button className="btnCarritoVacio" variant="link">
+            Volver a Productos
+          </Button>
         </Link>
       </div>
     </div>
