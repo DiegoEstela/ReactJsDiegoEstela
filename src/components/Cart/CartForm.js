@@ -3,11 +3,13 @@ import { Form, Row, InputGroup, Col, Button } from "react-bootstrap";
 import { getFirestore } from "../../firebase";
 import { CartContext } from "../../Context/CartContext";
 import { UserContext } from "../../Context/UserContext";
+import { useAuth } from "../../Context/AuthContext";
 
 export const CartForm = () => {
   const { cart, calcularTotal } = useContext(CartContext);
   const { setOrdenId, UserInfo, setUserInfo } = useContext(UserContext);
   const { nombre, telefono, email } = UserInfo;
+  const { currentUser } = useAuth();
 
   const handleChangeUser = (event) => {
     setUserInfo({ ...UserInfo, [event.target.name]: event.target.value });
@@ -82,7 +84,7 @@ export const CartForm = () => {
                 placeholder="Email"
                 name="email"
                 aria-describedby="inputGroupPrepend"
-                value={email}
+                value={currentUser.email}
                 onChange={handleChangeUser}
               />
               <Form.Control.Feedback type="invalid">

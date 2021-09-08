@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NabVar.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { CartWidget } from "./CartWidget.js";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../Context/AuthContext";
 
 export const NabVar = () => {
+  const [Error, setError] = useState("");
+
+  const { currentUser, logout } = useAuth();
+  const handleLogout = async () => {
+    try {
+      await logout();
+    } catch (error) {
+      console.log(Error);
+      setError("server error");
+    }
+  };
   return (
     <div className="NavBar">
       <Navbar bg="light" expand="lg">
@@ -17,11 +29,26 @@ export const NabVar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link>
-                <Link className="li" to="/">
-                  Inicio
-                </Link>
-              </Nav.Link>
+              {currentUser ? (
+                <Nav.Link className="li" onClick={handleLogout}>
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png"
+                    alt="user"
+                    className="userImg"
+                  />
+                  Cerrar Sesion
+                </Nav.Link>
+              ) : (
+                <Nav.Link className="li">
+                  <img
+                    src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png"
+                    alt="user"
+                    className="userImg"
+                  />
+                  Iniciar Sesion
+                </Nav.Link>
+              )}
+
               <Nav.Link className="li" to="/Novedades">
                 <Link className="li" to="/Novedades">
                   Novedades

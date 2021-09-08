@@ -1,6 +1,6 @@
 .containerHome {
   background-color: rgb(250, 191, 191);
-  height: 150px;
+  height: 130px;
   max-width: 100%;
   text-align: center;
   position: relative;
@@ -10,7 +10,7 @@
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
-  padding-top: 40px;
+  padding-top: 10px;
   font-size: 3em;
 }
 
@@ -22,7 +22,7 @@
 
 .imginicio {
   position: absolute;
-  top: 85px;
+  top: 60px;
   height: 60px;
   right: 10px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
@@ -37,7 +37,7 @@
   align-content: center;
   border-radius: 50%;
   font-size: 20px;
-  top: 115px;
+  top: 100px;
   height: 30px;
   width: 30px;
   right: 50px;

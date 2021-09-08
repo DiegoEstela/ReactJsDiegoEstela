@@ -9,23 +9,34 @@ import { CartProvider } from "../Context/CartContext";
 import { UserContextProvider } from "../Context/UserContext";
 import { Inicio } from "../components/Inicio/Inicio";
 import { ListNovedades } from "../components/Novedades/ListNovedades";
+import { Login } from "../components/Auth/Login";
+import { SignUp } from "../components/Auth/SignUp";
+import { PrivateRoute } from "../components/Auth/PrivateRoute";
+import { AuthProvider } from "../Context/AuthContext";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <CartProvider>
-        <UserContextProvider>
-          <NabVar />
-          <Home />
-          <Switch>
-            <Route exact path="/" component={Inicio} />
-            <Route path="/Cart" component={Cart} />
-            <Route path="/ItemList" component={ItemListContainer} />
-            <Route path="/Novedades" component={ListNovedades} />
-            <Route path="/product/:id" component={ItemDetailContainer} />
-          </Switch>
-        </UserContextProvider>
-      </CartProvider>
+      <AuthProvider>
+        <CartProvider>
+          <UserContextProvider>
+            <NabVar />
+            <Home />
+            <Switch>
+              <PrivateRoute exact path="/" component={Inicio} />
+              <PrivateRoute path="/Cart" component={Cart} />
+              <Route path="/ItemList" component={ItemListContainer} />
+              <Route path="/Novedades" component={ListNovedades} />
+              <PrivateRoute
+                path="/product/:id"
+                component={ItemDetailContainer}
+              />
+              <Route path="/login" component={Login} />
+              <Route path="/signup" component={SignUp} />
+            </Switch>
+          </UserContextProvider>
+        </CartProvider>
+      </AuthProvider>
     </BrowserRouter>
   );
 };

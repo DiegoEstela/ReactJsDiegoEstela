@@ -24,4 +24,15 @@
   text-decoration: none;
   list-style: none;
   color: black;
+  display: flex;
+  align-items: center;
+}
+
+.userImg {
+  width: 40px;
+  padding: 0%;
+  margin-right: 5px;
+  background-color: rgba(0, 128, 128, 0.37);
+  border-radius: 10px;
+  box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
 }
