@@ -24,7 +24,7 @@ export default function ItemDetail() {
     const item = items.find((item) => item.id === id);
     setItem(item);
   }, [id]);
-
+  if (!item) return <div> Loading...</div>;
   return (
     <div>
       <h2 id="productos" className="tituloProductos">
