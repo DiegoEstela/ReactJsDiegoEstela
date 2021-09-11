@@ -68,3 +68,9 @@ h5 {
 .descripcion {
   font-size: 80%;
 }
+
+.productoInexistente {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10%;
+}

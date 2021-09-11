@@ -32,7 +32,22 @@
   width: 40px;
   padding: 0%;
   margin-right: 5px;
-  background-color: rgba(0, 128, 128, 0.37);
+  background-color: red;
   border-radius: 10px;
   box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
+}
+
+.userImgIniciar {
+  width: 40px;
+  padding: 0%;
+  margin-right: 5px;
+  background-color: teal;
+  border-radius: 10px;
+  box-shadow: 5px 10px 17px -10px rgba(0, 0, 0, 75);
+}
+
+.User {
+  position: absolute;
+  top: 80px;
+  left: 90px;
 }

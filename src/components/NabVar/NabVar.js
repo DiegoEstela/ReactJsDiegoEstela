@@ -36,17 +36,17 @@ export const NabVar = () => {
                     alt="user"
                     className="userImg"
                   />
-                  Cerrar Sesion
+                  <span className="User"> {currentUser.email}</span>
                 </Nav.Link>
               ) : (
                 <Nav.Link className="li">
-                  <img
-                    src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png"
-                    alt="user"
-                    className="userImg"
-                  />
                   <Link className="li" to="/Login">
-                    Iniciar sesion
+                    <img
+                      src="https://cdn0.iconfinder.com/data/icons/set-ui-app-android/32/8-512.png"
+                      alt="user"
+                      className="userImgIniciar"
+                    />
+                    <span className="User"> iniciar sesion</span>
                   </Link>
                 </Nav.Link>
               )}

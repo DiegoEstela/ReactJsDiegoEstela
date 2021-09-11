@@ -24,7 +24,13 @@ export default function ItemDetail() {
     const item = items.find((item) => item.id === id);
     setItem(item);
   }, [id]);
-  if (!item) return <div> Loading...</div>;
+  if (!item)
+    return (
+      <div className="productoInexistente">
+        {" "}
+        El producto seleccionado no existe
+      </div>
+    );
   return (
     <div>
       <h2 id="productos" className="tituloProductos">

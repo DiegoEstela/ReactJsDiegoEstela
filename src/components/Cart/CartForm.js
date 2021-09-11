@@ -54,8 +54,9 @@ export const CartForm = () => {
     <div>
       <Form className="form" onSubmit={finalizarCompra}>
         <Row className="mb-3">
-          <Form.Group as={Col} md="4" controlId="validationCustom01">
+          <Form.Group as={Col} md="4" controlId="validationCustom01" required>
             <Form.Label>Nombre Y Apellido</Form.Label>
+
             <Form.Control
               type="text"
               placeholder="Nombre Y Apellido"
@@ -63,6 +64,7 @@ export const CartForm = () => {
               value={nombre}
               onChange={handleChangeUser}
             />
+
             <Form.Control.Feedback>Muy Bien!</Form.Control.Feedback>
           </Form.Group>
           <Form.Group as={Col} md="4">
